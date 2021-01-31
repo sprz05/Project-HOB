@@ -44,7 +44,7 @@
 
         <!-- Add content to Collapsible (display:none) --->
         <div id='addTasksToSteps' style='display:none'>
-            <img id="img3" src="https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhD-pLOB/pub?w=482&amp;h=146">
+            <img id="img3" src="https://docs.google.com/drawings/d/e/2PACX-1vT1LiLui__rkWir3NK0iNE98waGx7yX-Mqhw-Tnvv9TGftcHBE4eBoYsFgl5L7OCq8KWpXznhD-pLOB/pub?w=800&amp;h=500">
          <p>Add tasks to your steps</p>
             <!-- this will be cloned -->
             <div id='inputTaskDiv' style='display:none'>
@@ -98,3 +98,32 @@ window.onload = (event) => {
   localStorage.removeItem( localStorage );
 };   
 </script>
+
+
+
+<style>
+  .feedback-button {
+  height: 40px;
+  border: solid 3px #CCCCCC;
+  background: #333;
+  width: 100px;
+  line-height: 32px;
+  -webkit-transform: rotate(-90deg);
+  font-weight: 600;
+  color: white;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  text-align: center;
+  font-size: 17px;
+  position: fixed;
+  right: -40px;
+  top: 45%;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  z-index: 999;
+}
+
+</style>
+
+<a href="https://airtable.com/shr6iWczwU3hnGHGY" target="_blank"><button id="popup" class="feedback-button">Feedback</button></a>
+<script src="_include/js/feedback.js"></script>
